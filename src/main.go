@@ -175,7 +175,7 @@ func main() {
 	if err != nil {
 		log.Fatalf("Unable to parse client secret file to config: %v", err)
 	}
-	time.Sleep(5 * time.Minute)
+	time.Sleep(10 * time.Minute)
 	client := getClient(ctx, config)
 	service, err := youtube.New(client)
 
